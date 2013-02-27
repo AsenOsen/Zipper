@@ -17,9 +17,9 @@ public:
             path = p+"\\";
             real_bin_file=path+"binary.zipper";
         }
-    void getInfo();       // метод, конструирующий блок с данными при архивации
-    void InCompress();    // метод архивации файлов
-    void OutCompress(string binary); // метод разархивации файлов
+    void getInfo();   
+    void InCompress();   
+    void OutCompress(string binary);
 
     static string get_file_name(string fn){return fn.substr(fn.find_last_of("\\")+1,fn.size());}
 };
